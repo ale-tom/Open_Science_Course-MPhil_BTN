@@ -19,8 +19,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ------------------------------------------------------------------------
 
 ```{=html}
-<img src="https://img.icons8.com/ios/250/000000/marker.png")" alt = "test" />
+<img src="https://img.icons8.com/ios/250/000000/marker.png" align="left" width = "20"   class="logo"/>
 ```
+
  `r fa("calendar-alt", height = 17, fill = "steelblue")`  January 18 2021
  
  `r fa("clock", height = 17, fill = "steelblue")`  10:00 - 12:00
