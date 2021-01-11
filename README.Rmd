@@ -4,12 +4,7 @@ output: github_document
 ---
 
 ```{=html}
-<script>
-   $(document).ready(function() {
-     $head = $('#header');
-     $head.prepend('<img src=\"logo_uni.jpg\" style=\"float: right;width: 200px;\"/>')
-   });
-</script>
+<img src="https://github.com/ale-tom/Open_Science_Course-MPhil_BTN/blob/main/logo_uni.jpg" align="right"  class="logo"/>
 ```
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

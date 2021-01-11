@@ -1,12 +1,7 @@
 Welcome
 ================
 
-<script>
-   $(document).ready(function() {
-     $head = $('#header');
-     $head.prepend('<img src=\"logo_uni.jpg\" style=\"float: right;width: 200px;\"/>')
-   });
-</script>
+<img src="https://github.com/ale-tom/Open_Science_Course-MPhil_BTN/blob/main/logo_uni.png" align="right"  class="logo"/>
 
 # Introduction to Open Data Science
 
