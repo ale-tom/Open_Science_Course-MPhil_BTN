@@ -1,7 +1,7 @@
 Welcome
 ================
 
-<img src="https://github.com/ale-tom/Open_Science_Course-MPhil_BTN/blob/main/logo_uni.png" align="right"  class="logo"/>
+<img src="https://github.com/ale-tom/Open_Science_Course-MPhil_BTN/blob/main/logo_uni.jpg" align="right"  class="logo"/>
 
 # Introduction to Open Data Science
 
