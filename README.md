@@ -1,11 +1,9 @@
-Welcome
+Introduction to Open Data Science
 ================
 
 <img src="https://github.com/ale-tom/Open_Science_Course-MPhil_BTN/blob/main/logo_uni.jpg" align="right" width = "200"   class="logo"/>
 
-# Introduction to Open Data Science
-
-**MPhil in Basic and Translational Neuroscience - Lent Term**
+# MPhil in Basic and Translational Neuroscience - Lent Term
 
 ------------------------------------------------------------------------
 

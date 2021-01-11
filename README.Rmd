@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "Introduction to Open Data Science"
 output: github_document
 ---
 
@@ -14,9 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
    library(fontawesome)
 ```
 
-# Introduction to Open Data Science
-
-**MPhil in Basic and Translational Neuroscience - Lent Term**
+# MPhil in Basic and Translational Neuroscience - Lent Term
 
 ------------------------------------------------------------------------
 
