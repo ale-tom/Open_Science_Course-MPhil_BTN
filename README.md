@@ -50,7 +50,7 @@ Please do the following Git/GitHub prep in advance:
 2.  Log into your GitHub account, go to “repositories” and create a new
     repository called “os\_repo”:  
 
-    <img src="github.png" style="width:70.0%" />
+    <img src="Pictures/github.png" style="width:70.0%" />
 
  
 
@@ -61,7 +61,7 @@ Please do the following Git/GitHub prep in advance:
     Please, just skip the Add gitignore and Add a license options.
 
       
-    <img src="Create.png" style="width:70.0%" />
+    <img src="Pictures/Create.png" style="width:70.0%" />
 
      
 

@@ -63,7 +63,7 @@ Please do the following Git/GitHub prep in advance:
 
 2.  Log into your GitHub account, go to "repositories" and create a new repository called "os_repo":\
 
-    ![](github.png){width="70%"}
+    ![](Pictures/github.png){width="70%"}
 
  
 
@@ -73,7 +73,7 @@ Please do the following Git/GitHub prep in advance:
     Please, just skip the Add gitignore and Add a license options.
 
     \
-    ![](Create.png){width="70%"}
+    ![](Pictures/Create.png){width="70%"}
 
      
 
