@@ -1,0 +1,454 @@
+---
+title: "Open Science (with R)"
+subtitle: "<br/>"
+author: "Alessandro Tomassini<br/><br/>Lena Dorfschmidt"
+institute: "<br/>MPhil Basic and Translational Neuroscience"
+date: "18.01.2021"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [center, middle]
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+```
+
+
+```{r use-logo, echo=FALSE}
+xaringanExtra::use_logo("logo_uni.jpg",exclude_class = c( "hide-logo"), width = "200px")
+```
+
+# Open Science
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+xaringanExtra::use_editable()
+```
+.panelset[
+.panel[.panel-name[What?]
+Some differences between using remark.js (left) and using **xaringan** (right):
+
+.pull-left[
+1. Start with a boilerplate HTML file;
+
+1. Plain Markdown;
+
+1. Write JavaScript to autoplay slides;
+
+1. Manually configure MathJax;
+
+1. Highlight code with `*`;
+
+1. Edit Markdown source and refresh browser to see updated slides;
+]
+
+.pull-right[
+1. Start with an R Markdown document;
+
+1. R Markdown (can embed R/other code chunks);
+
+1. Provide an option `autoplay`;
+
+1. MathJax just works;<sup>*</sup>
+
+1. Highlight code with `{{}}`;
+
+1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
+]
+
+
+]
+
+.panel[.panel-name[Why?]
+
+.pull-left[
+1. Start with a boilerplate HTML file;
+
+1. Plain Markdown;
+
+1. Write JavaScript to autoplay slides;
+
+1. Manually configure MathJax;
+
+1. Highlight code with `*`;
+
+1. Edit Markdown source and refresh browser to see updated slides;
+]
+
+.pull-right[
+1. Start with an R Markdown document;
+
+1. R Markdown (can embed R/other code chunks);
+
+1. Provide an option `autoplay`;
+
+1. MathJax just works;<sup>*</sup>
+
+1. Highlight code with `{{}}`;
+
+1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
+]
+]
+
+.panel[.panel-name[How?]
+
+.pull-left[
+1. Start with a boilerplate HTML file;
+
+1. Plain Markdown;
+
+1. Write JavaScript to autoplay slides;
+
+1. Manually configure MathJax;
+
+1. Highlight code with `*`;
+
+1. Edit Markdown source and refresh browser to see updated slides;
+]
+
+.pull-right[
+1. Start with an R Markdown document;
+
+1. R Markdown (can embed R/other code chunks);
+
+1. Provide an option `autoplay`;
+
+1. MathJax just works;<sup>*</sup>
+
+1. Highlight code with `{{}}`;
+
+1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
+]
+]
+
+.panel[.panel-name[References]
+]
+]
+
+---
+# Open Science: Pros vs Cons
+
+.pull-left[
+### &#x1F917; Pros
+
+.can-edit.key-likes[
+- Promotes rigor
+]
+]
+
+.pull-right[
+### &#x1F620; Cons
+
+.can-edit.key-dislikes[
+- Takes time
+]
+]
+
+---
+class:  center, middle
+
+# Get Started
+
+---
+
+# RMarkdown
+
+Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+
+Provides an R Markdown output format `xaringan::moon_reader` as a wrapper for remark.js, and you can use it in the YAML metadata, e.g.
+
+```yaml
+---
+title: "A Cool Presentation"
+output:
+  xaringan::moon_reader:
+    yolo: true
+    nature:
+      autoplay: 30000
+---
+```
+---
+
+# GitHub
+
+Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+
+```{r eval=FALSE, tidy=FALSE}
+devtools::install_github("yihui/xaringan")
+```
+--
+
+You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
+
+- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;<sup>1</sup>
+
+--
+
+- Click the `Knit` button to compile it;
+
+--
+
+- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)<sup>2</sup> "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
+
+.footnote[
+[1] 中文用户请看[这份教程](https://slides.yihui.org/xaringan/zh-CN.html)
+
+[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
+]
+
+---
+
+# Open Science Framework
+
+Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+
+```{r eval=FALSE, tidy=FALSE}
+devtools::install_github("yihui/xaringan")
+```
+
+---
+
+# Some tips
+
+As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
+
+1. The [remark.js](https://remarkjs.com) library;
+
+1. The **xaringan** package;
+
+Basically **xaringan** injected the chakra of R Markdown (minus Pandoc) into **remark.js**. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (**knitr**).
+
+---
+
+class: center, middle
+# Questions?
+
+---
+
+# Now try your hands
+
+Provides an R Markdown output format `xaringan::moon_reader` as a wrapper for remark.js, and you can use it in the YAML metadata, e.g.
+
+```yaml
+---
+title: "A Cool Presentation"
+output:
+  xaringan::moon_reader:
+    yolo: true
+    nature:
+      autoplay: 30000
+---
+```
+
+See the help page `?xaringan::moon_reader` for all possible options that you can use.
+
+---
+
+
+
+# R Code
+
+```{r comment='#'}
+# a boring regression
+fit = lm(dist ~ 1 + speed, data = cars)
+coef(summary(fit))
+dojutsu = c('地爆天星', '天照', '加具土命', '神威', '須佐能乎', '無限月読')
+grep('天', dojutsu, value = TRUE)
+```
+
+---
+
+# R Plots
+
+```{r cars, fig.height=4, dev='svg'}
+par(mar = c(4, 4, 1, .1))
+plot(cars, pch = 19, col = 'darkgray', las = 1)
+abline(fit, lwd = 2)
+```
+
+---
+
+# Tables
+
+If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
+
+```{r}
+knitr::kable(head(iris), format = 'html')
+```
+
+---
+
+# HTML Widgets
+
+I have not thoroughly tested HTML widgets against **xaringan**. Some may work well, and some may not. It is a little tricky.
+
+Similarly, the Shiny mode (`runtime: shiny`) does not work. I might get these issues fixed in the future, but these are not of high priority to me. I never turn my presentation into a Shiny app. When I need to demonstrate more complicated examples, I just launch them separately. It is convenient to share slides with other people when they are plain HTML/JS applications.
+
+See the next page for two HTML widgets.
+
+---
+
+```{r out.width='100%', fig.height=6, eval=require('leaflet')}
+library(leaflet)
+leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 17)
+```
+
+---
+
+```{r eval=require('DT'), tidy=FALSE}
+DT::datatable(
+  head(iris, 10),
+  fillContainer = FALSE, options = list(pageLength = 8)
+)
+```
+
+---
+
+# Some Tips
+
+- Do not forget to try the `yolo` option of `xaringan::moon_reader`.
+
+    ```yaml
+    output:
+      xaringan::moon_reader:
+        yolo: true
+    ```
+
+---
+
+
+# Some Tips
+
+- There are several ways to build incremental slides. See [this presentation](https://slides.yihui.org/xaringan/incremental.html) for examples.
+
+- The option `highlightLines: true` of `nature` will highlight code lines that start with `*`, or are wrapped in `{{ }}`, or have trailing comments `#<<`;
+
+    ```yaml
+    output:
+      xaringan::moon_reader:
+        nature:
+          highlightLines: true
+    ```
+
+    See examples on the next page.
+
+---
+
+# Some Tips
+
+
+.pull-left[
+An example using a leading `*`:
+
+    ```r
+    if (TRUE) {
+    ** message("Very important!")
+    }
+    ```
+Output:
+```r
+if (TRUE) {
+* message("Very important!")
+}
+```
+
+This is invalid R code, so it is a plain fenced code block that is not executed.
+]
+
+.pull-right[
+An example using `{{}}`:
+
+````
+`r ''````{r tidy=FALSE}
+if (TRUE) {
+*{{ message("Very important!") }}
+}
+```
+````
+Output:
+```{r tidy=FALSE}
+if (TRUE) {
+{{ message("Very important!") }}
+}
+```
+
+It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
+]
+
+---
+
+# Some Tips
+
+An example of using the trailing comment `#<<` to highlight lines:
+
+````markdown
+`r ''````{r tidy=FALSE}
+library(ggplot2)
+ggplot(mtcars) + 
+  aes(mpg, disp) + 
+  geom_point() +   #<<
+  geom_smooth()    #<<
+```
+````
+
+Output:
+
+```{r tidy=FALSE, eval=FALSE}
+library(ggplot2)
+ggplot(mtcars) + 
+  aes(mpg, disp) + 
+  geom_point() +   #<<
+  geom_smooth()    #<<
+```
+
+---
+
+# Some Tips
+
+When you enable line-highlighting, you can also use the chunk option `highlight.output` to highlight specific lines of the text output from a code chunk. For example, `highlight.output = TRUE` means highlighting all lines, and `highlight.output = c(1, 3)` means highlighting the first and third line.
+
+````md
+`r ''````{r, highlight.output=c(1, 3)}
+head(iris)
+```
+````
+
+```{r, highlight.output=c(1, 3), echo=FALSE}
+head(iris)
+```
+
+Question: what does `highlight.output = c(TRUE, FALSE)` mean? (Hint: think about R's recycling of vectors)
+
+---
+
+# Some Tips
+
+- To make slides work offline, you need to download a copy of remark.js in advance, because **xaringan** uses the online version by default (see the help page `?xaringan::moon_reader`).
+
+- You can use `xaringan::summon_remark()` to download the latest or a specified version of remark.js. By default, it is downloaded to `libs/remark-latest.min.js`.
+
+- Then change the `chakra` option in YAML to point to this file, e.g.
+
+    ```yaml
+    output:
+      xaringan::moon_reader:
+        chakra: libs/remark-latest.min.js
+    ```
+
+- If you used Google fonts in slides (the default theme uses _Yanone Kaffeesatz_, _Droid Serif_, and _Source Code Pro_), they won't work offline unless you download or install them locally. The Heroku app [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts) can help you download fonts and generate the necessary CSS.
+
+
+
+---
+
+class: center, middle
+
+# Now try your hands!
+
+
