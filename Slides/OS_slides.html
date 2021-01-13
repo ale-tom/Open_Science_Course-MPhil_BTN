@@ -4,12 +4,11 @@
     <title>Open Science (with R)</title>
     <meta charset="utf-8" />
     <meta name="author" content="Alessandro Tomassini  Lena Dorfschmidt" />
-    <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xf052348cbd644b8befa1a9a66a2b282","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xbe7ab9d8ba24d5585a66f24154f2fd3","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -82,110 +81,82 @@ top:1em;right:1em;
 })()</script>
 </div>
 
-# Open Science
+# Science is NOT a Miracle!
 
-.panelset[
-.panel[.panel-name[What?]
-Some differences between using remark.js (left) and using **xaringan** (right):
-
-.pull-left[
-1. Start with a boilerplate HTML file;
-
-1. Plain Markdown;
-
-1. Write JavaScript to autoplay slides;
-
-1. Manually configure MathJax;
-
-1. Highlight code with `*`;
-
-1. Edit Markdown source and refresh browser to see updated slides;
-]
-
-.pull-right[
-1. Start with an R Markdown document;
-
-1. R Markdown (can embed R/other code chunks);
-
-1. Provide an option `autoplay`;
-
-1. MathJax just works;&lt;sup&gt;*&lt;/sup&gt;
-
-1. Highlight code with `{{}}`;
-
-1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
-]
-
-
-]
-
-.panel[.panel-name[Why?]
-
-.pull-left[
-1. Start with a boilerplate HTML file;
-
-1. Plain Markdown;
-
-1. Write JavaScript to autoplay slides;
-
-1. Manually configure MathJax;
-
-1. Highlight code with `*`;
-
-1. Edit Markdown source and refresh browser to see updated slides;
-]
-
-.pull-right[
-1. Start with an R Markdown document;
-
-1. R Markdown (can embed R/other code chunks);
-
-1. Provide an option `autoplay`;
-
-1. MathJax just works;&lt;sup&gt;*&lt;/sup&gt;
-
-1. Highlight code with `{{}}`;
-
-1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
-]
-]
-
-.panel[.panel-name[How?]
-
-.pull-left[
-1. Start with a boilerplate HTML file;
-
-1. Plain Markdown;
-
-1. Write JavaScript to autoplay slides;
-
-1. Manually configure MathJax;
-
-1. Highlight code with `*`;
-
-1. Edit Markdown source and refresh browser to see updated slides;
-]
-
-.pull-right[
-1. Start with an R Markdown document;
-
-1. R Markdown (can embed R/other code chunks);
-
-1. Provide an option `autoplay`;
-
-1. MathJax just works;&lt;sup&gt;*&lt;/sup&gt;
-
-1. Highlight code with `{{}}`;
-
-1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
-]
-]
-
-.panel[.panel-name[References]
-]
-]
+.center[![description of the image](OS_slides_files/science_miracle.jpg)]
 
 ---
+
+# What are we talking about?
+
+.center[![description of the image](OS_slides_files/reproducible_table.png)]
+
+---
+
+# What is standing in our way?
+
+
+---
+
+# Mismatch in Interest
+.center[![mismatch in interest](OS_slides_files/venn.png)]
+
+
+---
+# 5 Selfish Reasons to Work Reproducibly
+
+.panelset[
+.panel[.panel-name[1]
+##Reproducibility helps avoid disaster
+ 
+.center[![PhD Lost](OS_slides_files/lost_phd.png)]
+
+
+
+]
+
+.panel[.panel-name[2]
+##Reproducibility helps writing papers
+Well documented and accessible code and data...
+  - ...allow you to look up numbers easily.
+  - ...help you spot mistakes. 
+  - ...can go right into your paper.
+  - ...no more stressfull 'I will just sort the code out when we want to publish this.'
+]
+
+.panel[.panel-name[3]
+##Reproducibility helps reviewers see it your way
+
+]
+
+.panel[.panel-name[4]
+##Reproducibility enables continuity 
+ .center[![OS enables continuity](OS_slides_files/excuses.png)]
+
+ 
+]
+
+.panel[.panel-name[5]
+##Reproducibility helps to build your reputation
+
+]
+
+]
+---
+
+
+# *Apparent* Mismatch in Interest
+.center[![apparent mismatch in interest](OS_slides_files/venn_corrected.png)]
+
+
+---
+# How to get started
+.center[![FAIR principles](OS_slides_files/fair.png)]
+
+
+---
+
+
 # Open Science: Pros vs Cons
 
 .pull-left[
@@ -219,7 +190,7 @@ Provides an R Markdown output format `xaringan::moon_reader` as a wrapper for re
 
 ```yaml
 ---
-title: "A Cool Presentation"
+title: "Open Science"
 output:
   xaringan::moon_reader:
     yolo: true
@@ -318,18 +289,9 @@ coef(summary(fit))
 ```
 
 ```
-#               Estimate
-# (Intercept) -17.579095
-# speed         3.932409
-#             Std. Error
-# (Intercept)  6.7584402
-# speed        0.4155128
-#               t value
-# (Intercept) -2.601058
-# speed        9.463990
-#                 Pr(&gt;|t|)
-# (Intercept) 1.231882e-02
-# speed       1.489836e-12
+#               Estimate Std. Error   t value     Pr(&gt;|t|)
+# (Intercept) -17.579095  6.7584402 -2.601058 1.231882e-02
+# speed         3.932409  0.4155128  9.463990 1.489836e-12
 ```
 
 ```r
@@ -439,8 +401,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(-93.65, 42.0285, zoom = 17)
 ```
 
-<div id="htmlwidget-aa97c487015b2e2bded1" style="width:100%;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-aa97c487015b2e2bded1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-59b132b724561612e61f" style="width:100%;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-59b132b724561612e61f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 ---
 
@@ -452,8 +414,8 @@ DT::datatable(
 )
 ```
 
-<div id="htmlwidget-e5e2f5c29e1fc5f360cd" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e5e2f5c29e1fc5f360cd">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c2ad65c0ee762cd82904" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c2ad65c0ee762cd82904">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 
@@ -574,27 +536,13 @@ head(iris)
 
 
 ```
-*##   Sepal.Length Sepal.Width
-## 1          5.1         3.5
-*## 2          4.9         3.0
-## 3          4.7         3.2
-## 4          4.6         3.1
-## 5          5.0         3.6
-## 6          5.4         3.9
-##   Petal.Length Petal.Width
-## 1          1.4         0.2
-## 2          1.4         0.2
-## 3          1.3         0.2
-## 4          1.5         0.2
-## 5          1.4         0.2
-## 6          1.7         0.4
-##   Species
-## 1  setosa
-## 2  setosa
-## 3  setosa
-## 4  setosa
-## 5  setosa
-## 6  setosa
+*##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+*## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa
 ```
 
 Question: what does `highlight.output = c(TRUE, FALSE)` mean? (Hint: think about R's recycling of vectors)
@@ -624,8 +572,6 @@ Question: what does `highlight.output = c(TRUE, FALSE)` mean? (Hint: think about
 class: center, middle
 
 # Now try your hands!
-
-
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

@@ -1,0 +1,10 @@
+INFO [2021-01-13 16:09:29] $x
+INFO [2021-01-13 16:09:29] list(c("reliable results", "publication regardless of outcome", 
+INFO [2021-01-13 16:09:29]     "transparency"), c("suprising results", "publication of \"positive\" results"))
+INFO [2021-01-13 16:09:29] 
+INFO [2021-01-13 16:09:29] $filename
+INFO [2021-01-13 16:09:29] [1] "OS_slides_files/venndiagramm_OS.png"
+INFO [2021-01-13 16:09:29] 
+INFO [2021-01-13 16:09:29] $category.names
+INFO [2021-01-13 16:09:29] c("What's good for science", "What's good for scientists")
+INFO [2021-01-13 16:09:29] 

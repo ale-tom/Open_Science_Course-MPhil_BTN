@@ -1,0 +1,8 @@
+INFO [2021-01-13 16:08:32] $x
+INFO [2021-01-13 16:08:32] list(c("reliable results", "publication regardless of outcome", 
+INFO [2021-01-13 16:08:32]     "transparency"), c("suprising results", "publication of \"positive\" results"))
+INFO [2021-01-13 16:08:32] 
+INFO [2021-01-13 16:08:32] $filename
+INFO [2021-01-13 16:08:32] [1] "OS_slides_files/venndiagramm_OS.png"
+INFO [2021-01-13 16:08:32] 
+ERROR [2021-01-13 16:08:32] Unexpected parameter length for 'category'
