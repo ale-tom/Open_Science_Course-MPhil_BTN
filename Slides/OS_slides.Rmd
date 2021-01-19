@@ -177,12 +177,15 @@ You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rs
 ---
 
 # Open Science Framework
+.pull-left[
+- Preregistration
+- Data Storage 
+- Preprint Service
+]
 
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
-
-```{r eval=FALSE, tidy=FALSE}
-devtools::install_github("yihui/xaringan")
-```
+.pull-right[
+![OSF Logo](OS_slides_files/osf.png)
+]
 
 ---
 
