@@ -22,13 +22,13 @@ knitr::opts_chunk$set(echo = TRUE)
 <img src="https://img.icons8.com/ios/250/000000/calendar.png" align="left" width = "20"   class="logo"/>
 ```
 
-  January 18 2021
+  January 20 2021
  
 ```{=html}
 <img src="https://img.icons8.com/ios/250/000000/clock.png" align="left" width = "20"   class="logo"/>
 ```  
 
-  10:00 - 12:00
+  14:00 - 16:00
  
 ```{=html}
 <img src="https://img.icons8.com/ios/250/000000/marker.png" align="left" width = "20"   class="logo"/>
@@ -38,6 +38,22 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ------------------------------------------------------------------------
+
+## Course Aims
+
+1. To familiarise with the principles of transparency, reproducibility and accessibility that inspire the Open Science movement.
+
+2. To introduce current topics in Open Science spanning pre-registration, data sharing, reproducible research, and open publication.
+
+3. To teach practical skill for more open and reproducible research. 
+
+ 
+
+## Objectives
+
+At the end of the course the students should be able to create a reproducible workflow from start to finish. This will include creating RMarkdown executable reports, setting up and performing version control with GitHub, and integrating the workflow with the Open Science Framework.
+
+ 
 
 ## Pre-work
 

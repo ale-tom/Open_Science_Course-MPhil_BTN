@@ -189,15 +189,12 @@ Reproducible papers: The idea that any paper can be obtained, its source materia
 
   - Increases the quality of scientific outputs by forcing researchers to be careful, thorough, and explicit
  
- <br/>
   
   - Increases the likelihood that any errors will be spotted early, instead of down the line (saves time, money, and pride)
   
-  <br/>
   
   - A clear computational workflow makes it easy to re-run analyses or to re-use data from past experiments
   
-   <br/>
   
   - Easy to learn
   
@@ -301,6 +298,8 @@ Open source project management tool: supports the whole project's lifecycle
 
 <br/>
 
+ - Follows established templates
+
  - Power sensitivity analysis
  
  - Predefined hypotheses (*separating exploratory from confirmatory research*)
@@ -308,8 +307,6 @@ Open source project management tool: supports the whole project's lifecycle
  - Predefined analytical plan (*improves transparency*)
  
  - Time-stamped
- 
- - Follows established templates
  
  - Can be embargoed until acceptance of paper
 
