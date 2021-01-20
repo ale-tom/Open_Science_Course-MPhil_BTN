@@ -27,18 +27,14 @@ xaringanExtra::use_logo("logo_uni.jpg",exclude_class = c( "hide-logo"), width = 
 
 # Science is NOT a Miracle!
 
-.center[![description of the image](OS_slides_files/science_miracle.jpg)]
+.center[![description of the image](OS_slides_files/science_miracle.jpg){width=50%}]
+
 
 ---
 
 # What are we talking about?
 
 .center[![description of the image](OS_slides_files/reproducible_table.png)]
-
----
-
-# What is standing in our way?
-
 
 ---
 
@@ -73,18 +69,19 @@ Well documented and accessible code and data...
 
 .panel[.panel-name[3]
 ##Reproducibility helps reviewers see it your way
+   - helps reviewer's understand your results better - and maybe even try out their own suggestions for improvement
+
 
 ]
 
 .panel[.panel-name[4]
 ##Reproducibility enables continuity 
  .center[![OS enables continuity](OS_slides_files/excuses.png)]
-   - helps reviewer's understand your results better - and maybe even try out their own suggestions for improvement
 ]
 
 .panel[.panel-name[5]
 ##Reproducibility helps to build your reputation
-  - 
+  - toolboxes, libraries, software packages can all go on your CV
 ]
 
 ]
