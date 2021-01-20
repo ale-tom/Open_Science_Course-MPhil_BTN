@@ -98,9 +98,10 @@ Please do the following Git/GitHub prep in advance:
 4.   Install Git from here: <http://git-scm.com/downloads>.\
     You can find the instructions to install Git here: <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>.
     
-    
+
+5.   Install the following packages:    
 ```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
-prova
+install.packages(c('rmarkdown','tinytex','gh','usethis','gitcreds'))
 ```
     
 
