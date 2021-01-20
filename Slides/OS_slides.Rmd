@@ -3,7 +3,7 @@ title: "Open Science (with R)"
 subtitle: "<br/>"
 author: "Alessandro Tomassini<br/><br/>Lena Dorfschmidt"
 institute: "<br/>MPhil Basic and Translational Neuroscience"
-date: "18.01.2021"
+date: "20.01.2021"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -125,31 +125,154 @@ Well documented and accessible code and data...
 ---
 class:  center, middle
 
-# Get Started
+# Let's get started
 
 ---
 
-# RMarkdown
+# R Markdown
 
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+Reproducible papers: The idea that any paper can be obtained, its source material being handy, and then any change anyone likes can be made to it.
 
-Provides an R Markdown output format `xaringan::moon_reader` as a wrapper for remark.js, and you can use it in the YAML metadata, e.g.
+.panelset[
+.panel[.panel-name[What is it?]
+  - R Markdown is an add-on package to R
+  - It allows to write a single document that combines:
+          - Text
+          - Code
+          - Plots
+          - Images
+          - Videos
+          - Equations
+  - It is extremely versatile and can render the document in various formats:
+          - PDF
+          - MS Words
+          - Web page
+          - Book
+          - Slides...actually these slides are based on R Markdown!
 
-```yaml
----
-title: "Open Science"
-output:
-  xaringan::moon_reader:
-    yolo: true
-    nature:
-      autoplay: 30000
----
-```
+
+
+]
+
+.panel[.panel-name[Reproducible]
+
+<br/>
+
+*"The provision of enough detail about study procedures and data so the same procedure could [..] be exactly repeated"* (Goodman et al., 2016)
+
+<br/>
+
+  - Removes all guesswork regarding your data analysis and reporting
+  
+  <br/>
+
+  
+  - A work can be reproduced by simply downloading and running a R Markdown document
+  
+  
+]
+
+.panel[.panel-name[Other benefits]
+<br/>
+
+  - Increases the quality of scientific outputs by forcing researchers to be careful, thorough, and explicit
+ 
+ <br/>
+  
+  - Increases the likelihood that any errors will be spotted early, instead of down the line (saves time, money, and pride)
+  
+  <br/>
+  
+  - A clear computational workflow makes it easy to re-run analyses or to re-use data from past experiments
+  
+   <br/>
+  
+  - Easy to learn
+  
+
+]
+
+]
+
+
 ---
 
 # GitHub
 
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+Version controls is an approach to  record changes made in a file over time
+.panelset[
+.panel[.panel-name[What is it?]
+
+<br/>
+
+ - **Git** is a version control system to manage the evolution of a set of files - called a **repository**
+ 
+ - **GitHub** is a web service (like GitLab and Bitbucket) for storing git repositories online
+ 
+ - ** Versioning** is the management of changes or revisions made in a file or project
+
+]
+
+.panel[.panel-name[Reproducibility]
+
+<br/>
+
+- Changes to files at any time can be tracked and reviewed
+
+- Changes are documented and explained by **commit messages** 
+
+- Commit messages and comments are helpful to understand changes in files or analytical decisions
+
+- Overall, version control makes analyses **auditable** and **reproducible**
+
+]
+.panel[.panel-name[How does it work?]
+## Basic workflow
+
+.pull-left[
+- **Pull** changes done to the remote repository into the local repository
+  
+- Work locally
+  
+- **Stage**, i.e.select changed files
+
+- **Commit**, i.e. record changes to the file's history
+
+- **Push** changes to the remote repository
+]
+
+.pull-right[![Most of the work done locally](OS_slides_files/no-branch.png) ]
+
+  
+  
+]
+
+.panel[.panel-name[Collaborative]
+## Fork-merge workflow
+
+.pull-left[
+- **Fork** someone's repository 
+  
+- Work locally 
+  
+- Make a **pull request**  to implement your changes
+
+- Maintainers need to approve changes
+
+- Changes approved and fork **merged** to main repository
+
+
+]
+
+.pull-right[![Most of the work done locally](OS_slides_files/forkmerge.png) ]
+
+  
+  
+]
+
+]
+
+---
 
 ```{r eval=FALSE, tidy=FALSE}
 devtools::install_github("yihui/xaringan")
@@ -177,27 +300,83 @@ You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rs
 ---
 
 # Open Science Framework
+Open source project management tool: supports the whole project's lifecycle
+.panelset[
+.panel[.panel-name[Pre-registration]
+
+<br/>
+
+ - Power sensitivity analysis
+ 
+ - Predefined hypotheses
+ 
+ - Predefined analytical plan
+ 
+ - Time-stamped
+ 
+ - Generates a unique Digital Object Identifier (DOI)
+ 
+ - Can be embargoed until acceptance of paper
+
+]
+
+.panel[.panel-name[Data & code storage]
+
+<br/>
+
+- Changes to files at any time can be tracked and reviewed
+
+- Changes are documented and explained by **commit messages** 
+
+- Commit messages and comments are helpful to understand changes in files or analytical decisions
+
+- Overall, version control makes analyses **auditable** and **reproducible**
+
+]
+.panel[.panel-name[Versioning]
+## Basic workflow
+
 .pull-left[
-- Preregistration
-- Data Storage 
-- Preprint Service
+- Allows version control of the project
+  
+- Allows both basic and collaborative workflows
+
+- Can be directly linked to a GitHub repository
+
+- **Push** changes to the remote repository
 ]
 
-.pull-right[
-![OSF Logo](OS_slides_files/osf.png)
+.pull-right[![Most of the work done locally](OS_slides_files/no-branch.png) ]
+
+  
+  
 ]
 
----
+.panel[.panel-name[Preprints]
+## Fork-merge workflow
 
-# Some tips
+.pull-left[
+- Indexed in Google Scholar for maximum discoverability
+  
+- Creates a Digital Object Identifier (DOI)  
+  
+- Make a **pull request**  to implement your changes
 
-As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
+- Maintainers need to approve changes
 
-1. The [remark.js](https://remarkjs.com) library;
+- Changes approved and fork **merged** to main repository
 
-1. The **xaringan** package;
 
-Basically **xaringan** injected the chakra of R Markdown (minus Pandoc) into **remark.js**. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (**knitr**).
+]
+
+.pull-right[![Most of the work done locally](OS_slides_files/forkmerge.png) ]
+
+  
+  
+]
+
+]
+
 
 ---
 
@@ -205,225 +384,10 @@ class: center, middle
 # Questions?
 
 ---
-
-# Now try your hands
-
-Provides an R Markdown output format `xaringan::moon_reader` as a wrapper for remark.js, and you can use it in the YAML metadata, e.g.
-
-```yaml
----
-title: "A Cool Presentation"
-output:
-  xaringan::moon_reader:
-    yolo: true
-    nature:
-      autoplay: 30000
----
-```
-
-See the help page `?xaringan::moon_reader` for all possible options that you can use.
-
----
-
-
-
-# R Code
-
-```{r comment='#'}
-# a boring regression
-fit = lm(dist ~ 1 + speed, data = cars)
-coef(summary(fit))
-dojutsu = c('地爆天星', '天照', '加具土命', '神威', '須佐能乎', '無限月読')
-grep('天', dojutsu, value = TRUE)
-```
-
----
-
-# R Plots
-
-```{r cars, fig.height=4, dev='svg'}
-par(mar = c(4, 4, 1, .1))
-plot(cars, pch = 19, col = 'darkgray', las = 1)
-abline(fit, lwd = 2)
-```
-
----
-
-# Tables
-
-If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
-
-```{r}
-knitr::kable(head(iris), format = 'html')
-```
-
----
-
-# HTML Widgets
-
-I have not thoroughly tested HTML widgets against **xaringan**. Some may work well, and some may not. It is a little tricky.
-
-Similarly, the Shiny mode (`runtime: shiny`) does not work. I might get these issues fixed in the future, but these are not of high priority to me. I never turn my presentation into a Shiny app. When I need to demonstrate more complicated examples, I just launch them separately. It is convenient to share slides with other people when they are plain HTML/JS applications.
-
-See the next page for two HTML widgets.
-
----
-
-```{r out.width='100%', fig.height=6, eval=require('leaflet')}
-library(leaflet)
-leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 17)
-```
-
----
-
-```{r eval=require('DT'), tidy=FALSE}
-DT::datatable(
-  head(iris, 10),
-  fillContainer = FALSE, options = list(pageLength = 8)
-)
-```
-
----
-
-# Some Tips
-
-- Do not forget to try the `yolo` option of `xaringan::moon_reader`.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        yolo: true
-    ```
-
----
-
-
-# Some Tips
-
-- There are several ways to build incremental slides. See [this presentation](https://slides.yihui.org/xaringan/incremental.html) for examples.
-
-- The option `highlightLines: true` of `nature` will highlight code lines that start with `*`, or are wrapped in `{{ }}`, or have trailing comments `#<<`;
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          highlightLines: true
-    ```
-
-    See examples on the next page.
-
----
-
-# Some Tips
-
-
-.pull-left[
-An example using a leading `*`:
-
-    ```r
-    if (TRUE) {
-    ** message("Very important!")
-    }
-    ```
-Output:
-```r
-if (TRUE) {
-* message("Very important!")
-}
-```
-
-This is invalid R code, so it is a plain fenced code block that is not executed.
-]
-
-.pull-right[
-An example using `{{}}`:
-
-````
-`r ''````{r tidy=FALSE}
-if (TRUE) {
-*{{ message("Very important!") }}
-}
-```
-````
-Output:
-```{r tidy=FALSE}
-if (TRUE) {
-{{ message("Very important!") }}
-}
-```
-
-It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
-]
-
----
-
-# Some Tips
-
-An example of using the trailing comment `#<<` to highlight lines:
-
-````markdown
-`r ''````{r tidy=FALSE}
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-  geom_point() +   #<<
-  geom_smooth()    #<<
-```
-````
-
-Output:
-
-```{r tidy=FALSE, eval=FALSE}
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-  geom_point() +   #<<
-  geom_smooth()    #<<
-```
-
----
-
-# Some Tips
-
-When you enable line-highlighting, you can also use the chunk option `highlight.output` to highlight specific lines of the text output from a code chunk. For example, `highlight.output = TRUE` means highlighting all lines, and `highlight.output = c(1, 3)` means highlighting the first and third line.
-
-````md
-`r ''````{r, highlight.output=c(1, 3)}
-head(iris)
-```
-````
-
-```{r, highlight.output=c(1, 3), echo=FALSE}
-head(iris)
-```
-
-Question: what does `highlight.output = c(TRUE, FALSE)` mean? (Hint: think about R's recycling of vectors)
-
----
-
-# Some Tips
-
-- To make slides work offline, you need to download a copy of remark.js in advance, because **xaringan** uses the online version by default (see the help page `?xaringan::moon_reader`).
-
-- You can use `xaringan::summon_remark()` to download the latest or a specified version of remark.js. By default, it is downloaded to `libs/remark-latest.min.js`.
-
-- Then change the `chakra` option in YAML to point to this file, e.g.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        chakra: libs/remark-latest.min.js
-    ```
-
-- If you used Google fonts in slides (the default theme uses _Yanone Kaffeesatz_, _Droid Serif_, and _Source Code Pro_), they won't work offline unless you download or install them locally. The Heroku app [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts) can help you download fonts and generate the necessary CSS.
-
-
-
----
-
-class: center, middle
-
+class:  center, middle
 # Now try your hands!
+
+---
+
 
 
