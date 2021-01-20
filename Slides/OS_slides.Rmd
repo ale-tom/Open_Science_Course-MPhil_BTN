@@ -239,13 +239,17 @@ Version controls is an approach to  record changes made in a file over time
 - **Commit**, i.e. record changes to the file's history
 
 - **Push** changes to the remote repository
+
 ]
 
-.pull-right[![Most of the work done locally](OS_slides_files/no-branch.png) ]
+.pull-right[![Most of the work done locally](OS_slides_files/no-branch.png) 
 
-  
-  
+ <font size = "2"> *Image by [edav.info](https://edav.info/github.html)]* </font>
+
 ]
+  
+
+
 
 .panel[.panel-name[Collaborative]
 ## Fork-merge workflow
@@ -264,7 +268,9 @@ Version controls is an approach to  record changes made in a file over time
 
 ]
 
-.pull-right[![Most of the work done locally](OS_slides_files/forkmerge.png) ]
+.pull-right[![Most of the work done locally](OS_slides_files/forkmerge.png)
+
+<font size = "2"> *Image by G. Lionetti via [Atlassian](https://www.atlassian.com/blog/archives/stash-git-forking-development-workflow)]* </font>
 
   
   
