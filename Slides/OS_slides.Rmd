@@ -158,7 +158,7 @@ Reproducible papers: The idea that any paper can be obtained, its source materia
 
 <br/>
 
-*"The provision of enough detail about study procedures and data so the same procedure could [..] be exactly repeated"* (Goodman et al., 2016)
+*"The provision of enough detail about study procedures and data so the same procedure could [..] be exactly repeated"*  <font size = "2">(Goodman et al., 2016)</font>
 
 <br/>
 
@@ -285,18 +285,19 @@ Version controls is an approach to  record changes made in a file over time
 Open source project management tool: supports the whole project's lifecycle
 .panelset[
 .panel[.panel-name[Pre-registration]
+*"The specification of a research design, hypotheses and analysis plan prior to  observing the outcomes of a study"* <font size = "2">Nosek & Lindsay (2018)</font>
 
 <br/>
 
  - Power sensitivity analysis
  
- - Predefined hypotheses
+ - Predefined hypotheses (*separating exploratory from confirmatory research*)
  
- - Predefined analytical plan
+ - Predefined analytical plan (*improves transparency*)
  
  - Time-stamped
  
- - Generates a unique Digital Object Identifier (DOI)
+ - Follows established templates
  
  - Can be embargoed until acceptance of paper
 
@@ -306,29 +307,42 @@ Open source project management tool: supports the whole project's lifecycle
 
 <br/>
 
-- Changes to files at any time can be tracked and reviewed
+- Free and open data/code storage
 
-- Changes are documented and explained by **commit messages** 
+- Storage locations in US, Canada, Germany, Australia (*choose Germany for GDPR compliance*) 
 
-- Commit messages and comments are helpful to understand changes in files or analytical decisions
+- Storage capped to 50GB for public projects (*suitable for processed neuroimaging data*)
 
-- Overall, version control makes analyses **auditable** and **reproducible**
+- It can interface to other storage services:
+  .pull-left[
+- GitHub
+- GitLab
+- Google Drive
+- OneDrive
+- OwnCloud]
+
+ .pull-right[- GitHub
+- Amazon S3
+- Dropbox
+- Figshare
+- Dataverse]
 
 ]
-.panel[.panel-name[Versioning]
-## Basic workflow
 
-.pull-left[
-- Allows version control of the project
+.panel[.panel-name[Versioning]
+
+<br/>
+<br/>
+- Allows version control of the project (*obviously less flexible than GitHub*)
   
 - Allows both basic and collaborative workflows
 
 - Can be directly linked to a GitHub repository
 
-- **Push** changes to the remote repository
-]
+- Allows to edit text files (including R and Python scripts) directly in the browser
 
-.pull-right[![Most of the work done locally](OS_slides_files/no-branch.png) ]
+
+
 
   
   
@@ -337,24 +351,19 @@ Open source project management tool: supports the whole project's lifecycle
 .panel[.panel-name[Preprints]
 ## Fork-merge workflow
 
-.pull-left[
+
 - Indexed in Google Scholar for maximum discoverability
   
 - Creates a Digital Object Identifier (DOI)  
+
+- Not yet a peer-reviewed paper but it is citable
   
-- Make a **pull request**  to implement your changes
+- Time-stamped upon creation (*prevents scooping*)
 
-- Maintainers need to approve changes
-
-- Changes approved and fork **merged** to main repository
+- Note, preprints can be shared only on one preprint server (*e.g. either osf or bioRxiv etc*)
 
 
-]
 
-.pull-right[![Most of the work done locally](OS_slides_files/forkmerge.png) ]
-
-  
-  
 ]
 
 ]
