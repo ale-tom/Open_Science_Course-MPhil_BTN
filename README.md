@@ -19,6 +19,8 @@ January 20 2021
 
 Zoom
 
+Slides of the course are hosted at https://ale-tom.github.io/Intro-to-Open-Science/OS_slides.html#1
+
 ------------------------------------------------------------------------
 
 ## Course Aims
