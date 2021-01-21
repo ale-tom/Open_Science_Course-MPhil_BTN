@@ -27,7 +27,6 @@ xaringanExtra::use_logo("logo_uni.jpg",exclude_class = c( "hide-logo"), width = 
 
 # Science is NOT a Miracle!
 
-.center[![description of the image](OS_slides_files/science_miracle.jpg){width=50%}]
 
 
 ---
