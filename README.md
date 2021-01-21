@@ -19,7 +19,8 @@ January 20 2021
 
 Zoom
 
-Links
+### Links
+
 Slides of the course  https://ale-tom.github.io/Intro-to-Open-Science/OS_slides.html#1
 
 GitHub Tutorial       https://ale-tom.github.io/Intro-to-Open-Science/GitHub.html#
