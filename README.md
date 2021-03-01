@@ -19,13 +19,16 @@ January 20 2021
 
 Zoom
 
-### Links
+# Links
 
-Slides of the course  https://ale-tom.github.io/Intro-to-Open-Science/OS_slides.html#1
+[Slides of the
+course](https://ale-tom.github.io/Intro-to-Open-Science/OS_slides.html#1)
 
-GitHub Tutorial       https://ale-tom.github.io/Intro-to-Open-Science/GitHub.html#
+[GitHub
+Tutorial](https://ale-tom.github.io/Intro-to-Open-Science/GitHub.html)
 
-RMarkdown Tutorial    https://ale-tom.github.io/Intro-to-Open-Science/RMarkdown_tutorial.html#
+[RMarkdown
+Tutorial](https://ale-tom.github.io/Intro-to-Open-Science/RMarkdown_tutorial.html)
 
 ------------------------------------------------------------------------
 
